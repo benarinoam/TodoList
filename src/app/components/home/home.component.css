@@ -1,0 +1,31 @@
+:host{
+    grid-template-areas: 
+    "AppName"
+    "Actions"
+    "Counters";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto 1fr;
+
+}
+.AppName{
+    grid-area: AppName;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--p800);
+    color: var(--p50);
+    align-items: center;
+    justify-self: center;
+}
+.Actions{
+    grid-area: Actions;
+    display: flex;
+    flex-direction: row;
+    color: var(--p800);
+    align-items: center;
+    justify-self: center;
+}
+.Action{
+    margin: 10px;
+    padding:20px;
+}

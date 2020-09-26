@@ -1,0 +1,31 @@
+<div class="form-area">
+    <div class="form-group" [formGroup]="groupForm">
+
+        <div class="Name">
+            <label for="caption">Item Name</label>
+        </div>
+        <div class="Value">
+            <input type="text" formControlName="caption" >
+        </div>
+        <div class="Name">
+            <label for="description">Description</label>
+        </div>
+        <div class="Value">
+            <input type="text" formControlName="description">
+        </div>
+        <div class="Name">
+            <label for="color">Choose Color</label>
+        </div>
+        <div class="Value">
+            <input type="color" formControlName="color">
+        </div>
+        <div class="Name">
+            <label for="icon">Icon</label>
+        </div>
+        <div class="Value">
+            <input type="image" formControlName="icon">
+        </div>
+    </div>
+    <button [disabled]="!groupForm.valid"
+    (click)="updateList()">Submit</button>
+</div>
